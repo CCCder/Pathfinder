@@ -27,6 +27,15 @@
 				padding-right: 0px;
 				padding-left: 0px;
 			}
+			
+			.navbar-brand{
+				margin-right: 0px;
+				padding-bottom: 0px;
+			}
+			
+			.col-sm{
+				padding-right: 0px;
+			}
 		</style>
 	</head>
 	<body>
@@ -34,39 +43,63 @@
 <!-- Nav ====================================================================-->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-	<div style="padding-left:0px;">
-		<div class="container" style="padding-left:0px;">
-		<a href="#">
-			<img src="image/pathfinder.png" class="img-fluid pb-2" width="80" height="60">
-		</a>
-		<a class="navbar-brand" href="#">
-			<h1 class="pt-3" style="font-family:beautiful-font; line-height: 25px;">探險者</h1>
-		</a>
-		<br>
-		<a class="navbar-brand" href="#">
-			<h5 style="font-family:beautiful-font; line-height: 10px; margin-left: 120px;">pathfinder</h5>
-		</a>
+	
+	<div>
+		<div class="row">
+			<div class="col-sm pt-2" style="padding-left:0px; padding-right:0px;">
+			<a class="navbar-brand" href="#">
+				<img src="image/pathfinder.png" class="img-fluid" width="80" height="60">
+			</a>
+			</div>
+			
+			<div class="col-sm" style="padding-left:0px;">
+			<a class="navbar-brand" href="#">
+			<h1 class="pt-3" style="font-family:beautiful-font; line-height: 30px;">探險者</h1>
+			</a>
+			<br>
+			<a class="navbar-brand" href="#">
+				<h5 style="font-family:beautiful-font; line-height: 10px; margin-left: 20px;">pathfinder</h5>
+			</a>
+		</div>
 		</div>
 	</div>
+	
+	<!-- <div style="padding-left:0px;"> -->
+		<!-- <div class="container" style="padding-left:0px;"> -->
+		<!-- <a class="navbar-brand" href="#"> -->
+			<!-- <img src="image/pathfinder.png" class="img-fluid" width="80" height="60"> -->
+		<!-- </a> -->
+		<!-- </div> -->
+		
+		<!-- <div class="container" style="padding-left:0px;"> -->
+			<!-- <a class="navbar-brand" href="#"> -->
+			<!-- <h1 class="pt-3" style="font-family:beautiful-font; line-height: 30px;">探險者</h1> -->
+			<!-- </a> -->
+			<!-- <br> -->
+			<!-- <a class="navbar-brand" href="#"> -->
+				<!-- <h5 style="font-family:beautiful-font; line-height: 10px; margin-left: 120px;">pathfinder</h5> -->
+			<!-- </a> -->
+		<!-- </div> -->
+	<!-- </div> -->
 	
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	
-	<div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+	<div class="collapse navbar-collapse ml-5" id="navbarTogglerDemo03">
 		<ul class="navbar-nav mr-auto mt-2 mt-sm-0">
 			<li class="nav-item active">
 				<a class="nav-link" href="#"><h4>Home</h4><span class="sr-only">(current)</span></a>
 			</li>
 
 			<li class="nav-item active">
-				<a class="nav-link" href="#"><h4>about</h4></a>
+				<a class="nav-link" href="#"><h4>About</h4></a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="#"><h4>produce</h4></a>
+				<a class="nav-link" href="#"><h4>Produce</h4></a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="#"><h4>detail</h4></a>
+				<a class="nav-link" href="#"><h4>Detail</h4></a>
 			</li>
 		</ul>
 		<a class="mr-4" href=""><img src="image/cart.png" width="50" height="50"></a>
