@@ -41,6 +41,7 @@
 				padding-left: 5px;
 			}
 		</style>
+		
 	</head>
 	<body>
 	
@@ -93,11 +94,11 @@
 	<div class="collapse navbar-collapse ml-5" id="navbarTogglerDemo03">
 		<ul class="navbar-nav mr-auto mt-2 mt-sm-0">
 			<li class="nav-item active">
-				<a class="nav-link" href="#"><h4>Home　|</h4><span class="sr-only">(current)</span></a>
+				<a class="nav-link" id="home" href="#"><h4>Home　|</h4><span class="sr-only">(current)</span></a>
 			</li>
 
 			<li class="nav-item active">
-				<a class="nav-link" href="#"><h4>About　|</h4></a>
+				<a class="nav-link" id="about" href="#"><h4>About　|</h4></a>
 			</li>
 			<li class="nav-item active">
 				<a class="nav-link" href="#"><h4>Produce　|</h4></a>
@@ -162,7 +163,7 @@
 
 
 
-<div class="container-fluid p-5" style="background-color:#F0F0F0; height:650px;">
+<div class="container-fluid p-5" style="background-color:#F0F0F0; height:650px;" id="Goabout">
 	<!-- <div class="pt-2" style="height:100%; width:100%; background-color:white;"> -->
 		<!-- <h1 class="display-1 text-center">關於我們</h1> -->
 		<!-- <h4 class="text-center">報國事羅雄校目變最假學接中黨年片美得？</h4> -->
@@ -185,5 +186,19 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+		$(function () {
+			//scroll down
+			$("#home").click(function() {
+				$('html, body').animate({scrollTop: '0px'}, "slow");
+			});
+
+			$("#about").click(function() {
+				$('html, body').animate({scrollTop:$('#Goabout').offset().top}, 600);
+			});
+		});
+	</script>
 	</body>
 </html>
