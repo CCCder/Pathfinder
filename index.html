@@ -129,7 +129,7 @@
 				<a class="nav-link" id="product" href="#"><h4>Produce　|</h4></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><h4>Detail</h4></a>
+				<a class="nav-link" id="detail" href="#"><h4>Detail</h4></a>
 			</li>
 		</ul>
 		<a class="mr-4" href=""><img src="image/cart.png" width="50" height="50"></a>
@@ -140,42 +140,42 @@
 
 <header>
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-	  </ol>
-	  <div class="carousel-inner">
-		<div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(image/view.jpg)">
-			<div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.3)">
-				<h5>First slide label</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Previous</p>
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(image/view.jpg)">
+				<div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.3)">
+					<h5>First slide label</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Previous</p>
+				</div>
+			</div>
+			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view2.jpg)">
+			</div>
+			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view3.jpg)">
+			</div>
+			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view2.jpg)">
 			</div>
 		</div>
-		<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view2.jpg)">
-		</div>
-		<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view3.jpg)">
-		</div>
-		<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view2.jpg)">
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 </header>
 
@@ -213,7 +213,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<button type="button" class="btn btn-outline-success btn-lg">購買</button>
+					<button type="button" class="btn btn-outline-success btn-lg" onclick="location.href='product.html'">購買</button>
 				</div>
 			</div>
 		</div>
@@ -241,7 +241,7 @@
 </div>
 
 <!--購買流程------------------------------------------------------------------->
-<div class="py-5" style="background-color: #b3d9d9;">
+<div class="py-5" style="background-color: #b3d9d9;" id="Godetail">
 	<div class="container py-5">
 		<div class="row">
 			<div class="col-lg-3 my-3">
@@ -290,7 +290,7 @@
 			<a id="footer_home" href="#" class="text-light">　Home</a>　|　
 			<a id="footer_about" href="#" class="text-light">About</a>　|　
 			<a id="footer_product" href="#" class="text-light">Product</a>　|　
-			Detail
+			<a id="footer_detail" href="#" class="text-light">Detail</a>
 			</h6>
 		</div>
 		
@@ -339,6 +339,15 @@
 			$("#product").click(function() {
 				$('html, body').animate({scrollTop:$('#Goproduct').offset().top-95}, 600);
 			});
+			
+			//滑到流程
+			$("#footer_detail").click(function() {
+				$('html, body').animate({scrollTop:$('#Godetail').offset().top-95}, 600);
+			});
+			$("#detail").click(function() {
+				$('html, body').animate({scrollTop:$('#Godetail').offset().top-95}, 600);
+			});
+			
 		});
 	</script>
 	</body>
