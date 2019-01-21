@@ -126,7 +126,7 @@
 				<a class="nav-link" id="about" href="#"><h4>About　|</h4></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"><h4>Produce　|</h4></a>
+				<a class="nav-link" id="product" href="#"><h4>Produce　|</h4></a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#"><h4>Detail</h4></a>
@@ -200,7 +200,12 @@
 </section>
 
 <!--商品----------------------------------------------------------------------->
-<div class="container-fluid py-5" style="padding-left:30px; padding-right:30px">
+<div class="container-fluid pt-5 pb-3" style="padding-left:30px; padding-right:30px" id="Goproduct">
+	<div style="text-align: cneter;">
+		<div style="text-align:center;">
+		<h1 class="display-1 text-center">旅遊行程</h1>
+	</div>
+	</div>
 	<div class="row">
 		<div class="col-lg-4 my-3">
 			<div class="card">
@@ -284,7 +289,7 @@
 			<h6>
 			<a id="footer_home" href="#" class="text-light">　Home</a>　|　
 			<a id="footer_about" href="#" class="text-light">About</a>　|　
-			Product　|　
+			<a id="footer_product" href="#" class="text-light">Product</a>　|　
 			Detail
 			</h6>
 		</div>
@@ -311,21 +316,28 @@
 
 	<script>
 		$(function () {
-			//scroll down
+			//滑到頂
+			$("#footer_home").click(function() {
+				$('html, body').animate({scrollTop: '0px'}, "slow");
+			});
 			$("#home").click(function() {
 				$('html, body').animate({scrollTop: '0px'}, "slow");
 			});
-
+			
+			//滑到關於我們
+			$("#footer_about").click(function() {
+				$('html, body').animate({scrollTop:$('#Goabout').offset().top-95}, 600);
+			});
 			$("#about").click(function() {
 				$('html, body').animate({scrollTop:$('#Goabout').offset().top-95}, 600);
 			});
 			
-			$("#footer_home").click(function() {
-				$('html, body').animate({scrollTop: '0px'}, "slow");
+			//滑到商品
+			$("#footer_product").click(function() {
+				$('html, body').animate({scrollTop:$('#Goproduct').offset().top-95}, 600);
 			});
-
-			$("#footer_about").click(function() {
-				$('html, body').animate({scrollTop:$('#Goabout').offset().top-95}, 600);
+			$("#product").click(function() {
+				$('html, body').animate({scrollTop:$('#Goproduct').offset().top-95}, 600);
 			});
 		});
 	</script>
