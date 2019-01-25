@@ -5,6 +5,7 @@
 		<title>探險者 pathfinder</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -189,7 +190,7 @@
 		<div class="row justify-content-end">
 			<div class="col-lg-7">
 				<div class="px-5 py-3 mt-5" style="height:200px; background-color: rgba(252, 252, 252,0.7); display: table; margin-left: auto; margin-right: auto;">
-					<h1 class="display-1 text-center">關於我們</h1>
+					<h1 class="display-1 text-center" id="aboutUs" style="opacity:0">關於我們</h1>
 					<h4>報國事羅雄校目變最假學接中黨年片美得？</h4>
 					<h4>路時房筆係在孩續有，母學的條遊難保清福！</h4>
 					<h4>手到性是，美沒速現，裡成得經。的參片未市學。</h4>
@@ -203,7 +204,7 @@
 <div class="container-fluid pt-5 pb-3" style="padding-left:30px; padding-right:30px" id="Goproduct">
 	<div style="text-align: cneter;">
 		<div style="text-align:center;">
-		<h1 class="display-1 text-center">旅遊行程</h1>
+		<h1 class="display-1 text-center" id="travel" style="opacity:0">旅遊行程</h1>
 	</div>
 	</div>
 	<div class="row">
@@ -244,22 +245,22 @@
 <div class="py-5" style="background-color: #b3d9d9;" id="Godetail">
 	<div class="container py-5">
 		<div class="row">
-			<div class="col-lg-3 my-3">
+			<div class="col-lg-3 my-3" id="product_item1" style="opacity:0">
 				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
 				<h6>Step 1</h6>
 				<h3>訂購產品</h3>
 			</div>
-			<div class="col-lg-3 my-3">
+			<div class="col-lg-3 my-3" id="product_item2" style="opacity:0">
 				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
 				<h6>Step 1</h6>
 				<h3>訂購產品</h3>
 			</div>
-			<div class="col-lg-3 my-3">
+			<div class="col-lg-3 my-3" id="product_item3" style="opacity:0">
 				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
 				<h6>Step 1</h6>
 				<h3>訂購產品</h3>
 			</div>
-			<div class="col-lg-3 my-3">
+			<div class="col-lg-3 my-3" id="product_item4" style="opacity:0">
 				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
 				<h6>Step 1</h6>
 				<h3>訂購產品</h3>
@@ -349,6 +350,82 @@
 			});
 			
 		});
+		
+		var i = 0;
+		var j = 0;
+		var item1 = 0;
+		var item2 = 0;
+		var item3 = 0;
+		var item4 = 0;
+		//關於我們浮現效果
+		$(window).scroll(function(){
+			var travel = $("#travel");
+			var bottom_of_object = $(travel).offset().top + $(travel).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window > bottom_of_object && i==0 ){
+				$(travel).toggleClass('animated fadeInUp');
+				i++;
+			}
+		})
+		//旅遊行程浮現效果
+		$(window).scroll(function(){
+			var aboutUs = $("#aboutUs");
+			var bottom_of_object = $(aboutUs).offset().top + $(aboutUs).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window > bottom_of_object && j==0 ){
+				$(aboutUs).toggleClass('animated fadeInUp');
+				j++;
+			}
+		})
+		//商品1浮現效果
+		$(window).scroll(function(){
+			var product_item1 = $("#product_item1");
+			var bottom_of_object = $(product_item1).offset().top + $(product_item1).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window > bottom_of_object && item1==0 ){
+				$(product_item1).toggleClass('animated fadeInUp');
+				item1++;
+			}
+		})
+		//商品2浮現效果
+		$(window).scroll(
+		function(){
+			var product_item2 = $("#product_item2");
+			var bottom_of_object = $(product_item2).offset().top + $(product_item2).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window > bottom_of_object && item2==0 ){
+				$(product_item2).toggleClass('animated fadeInUp');
+				item2++;
+			}
+		})
+		//商品3浮現效果
+		$(window).scroll(
+		function(){
+			var product_item3 = $("#product_item3");
+			var bottom_of_object = $(product_item3).offset().top + $(product_item3).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window > bottom_of_object && item3==0 ){
+				$(product_item3).toggleClass('animated fadeInUp');
+				item3++;
+			}
+		})
+		//商品4浮現效果
+		$(window).scroll(
+		function(){
+			var product_item4 = $("#product_item4");
+			var bottom_of_object = $(product_item4).offset().top + $(product_item4).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window > bottom_of_object && item4==0 ){
+				$(product_item4).toggleClass('animated fadeInUp');
+				item4++;
+			}
+		})
 	</script>
 	</body>
 </html>
