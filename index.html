@@ -68,7 +68,7 @@
 			}
 			
 			.pic img{
-				transform:scale(1,1);transition: all 0.15s ease-out;
+				transition: all 0.15s ease-out;
 			}
 			
 			.pic img:hover{
@@ -311,11 +311,11 @@
 		
 		<br>
 		
-		<a href="https://facebook.com" target="_blank">
-			<img src="image/fb.png" class="img-fluid mr-3" width="50px" height="50px">
+		<a href="https://facebook.com" target="_blank" style="text-decoration:none;">
+			<img src="image/fb.png" id="fb" class="img-fluid mr-3" width="50px" height="50px">
 		</a>
-		<a href="https://www.instagram.com/?hl=zh-tw" target="_blank">
-			<img src="image/ig.png" class="img-fluid ml-3" width="50px" height="50px">
+		<a href="https://www.instagram.com/?hl=zh-tw" target="_blank" style="text-decoration:none;">
+			<img src="image/ig.png" id="ig" class="img-fluid ml-3" width="50px" height="50px">
 		</a>
 		
 		<p class="mt-5">&copy; pathfinder股份有限公司.</p>
@@ -439,6 +439,16 @@
 				$(product_item4).toggleClass('animated fadeInUp');
 				item4++;
 			}
+		})
+		//footer圖片效果
+		$(document).ready(function(){
+			$("#fb").hover(function(){
+				$("#fb").toggleClass('animated jello');
+			})
+			
+			$("#ig").hover(function(){
+				$("#ig").toggleClass('animated jello');
+			})
 		})
 	</script>
 	</body>
