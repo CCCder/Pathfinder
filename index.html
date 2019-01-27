@@ -66,6 +66,14 @@
 				font-size:12px;
 				text-align: center; /*置中*/
 			}
+			
+			.pic img{
+				transform:scale(1,1);transition: all 0.15s ease-out;
+			}
+			
+			.pic img:hover{
+				transform:scale(1.1,1.1);
+			}
 		</style>
 		
 	</head>
@@ -209,8 +217,10 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-4 my-3">
-			<div class="card">
-				<img class="card-img-top cover" src="image/path1.png" alt="Card image cap">
+			<div class="card ">
+				<div class="pic" style="overflow: hidden;">
+					<img class="card-img-top cover" src="image/path1.png" alt="Card image cap">
+				</div>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -220,7 +230,9 @@
 		</div>
 		<div class="col-lg-4 my-3">
 			<div class="card">
-				<img class="card-img-top" src="image/path2.png" alt="Card image cap">
+				<div class="pic" style="overflow: hidden;">
+					<img class="card-img-top" src="image/path2.png" alt="Card image cap">
+				</div>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -230,7 +242,9 @@
 		</div>
 		<div class="col-lg-4 my-3">
 			<div class="card">
-				<img class="card-img-top" src="image/path3.png" alt="Card image cap">
+				<div class="pic" style="overflow: hidden;">
+					<img class="card-img-top" src="image/path3.png" alt="Card image cap">
+				</div>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
