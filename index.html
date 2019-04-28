@@ -1,23 +1,21 @@
-
 <!DOCTYPE HTML>
 
 <html>
 	<head>
 		<title>探險者 pathfinder</title>
 		<meta charset="utf-8" />
-		
-		<link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
-		<link rel="stylesheet" href="../assets/css/animate.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+		<link rel="stylesheet" href="assets/css/animate.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="icon" href="../image/store.png">
+		<link rel="icon" href="image/store.png">
 		
 		<style type="text/css">
 			@font-face {
 				font-family: 'beautiful-font';
-				src: url(../fonts/beautiful-font.ttf);
+				src: url(fonts/beautiful-font.ttf);
 				font-weight:bold;
 			}
 			
@@ -37,7 +35,7 @@
 			h1{
 				font-family:beautiful-font;
 			}
-
+			
 			.container-fluid{
 				padding-right: 0px;
 				padding-left: 0px;
@@ -77,17 +75,6 @@
 			.pic img:hover{
 				transform:scale(1.1,1.1);
 			}
-			
-			.state_color{
-				background-color:rgba( 255, 255, 255, 0 );
-				transition:background-color 0.5s;
-			}
-			
-			.change_color{
-				background-color:#FFFDF5;
-				transition:background-color 0.5s;
-				
-			}
 		</style>
 		
 	</head>
@@ -95,15 +82,13 @@
 	
 <!-- Nav ====================================================================-->
 <div id="container">
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#FFFDF5" id="nav_color">
-<span id="win_num"></span>&nbsp&nbsp
-<span id="q_num"></span>&nbsp&nbsp
-<span id="tmp_num"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	
 	<div>
 		<div class="row">
 			<div class="col-sm pt-2" style="padding-left:0px; padding-right:0px;">
 				<a class="navbar-brand" href="#">
-					<img src="../image/pathfinder.png" class="img-fluid" width="80" height="60">
+					<img src="image/pathfinder.png" class="img-fluid" width="80" height="60">
 				</a>
 			</div>
 			
@@ -157,7 +142,7 @@
 				<a class="nav-link" id="detail" href="#"><h4>Detail</h4></a>
 			</li>
 		</ul>
-		<a class="mr-4" href="cart.php"><img src="../image/cart.png" width="50" height="50"></a>
+		<a class="mr-4" href=""><img src="image/cart.png" width="50" height="50"></a>
 	</div>
 </nav>
 
@@ -172,16 +157,17 @@
 			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 		</ol>
 		<div class="carousel-inner">
-			<div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(../image/little_view.jpg)">
-				<div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.7)">
-					<h2 style="font-family:beautiful-font;">旅行，可以是一場遊戲。無須規劃、隨機前進、親身感受，挖掘各地意想不到的迷人角落。</h2>
+			<div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(image/view.jpg)">
+				<div class="carousel-caption d-none d-md-block" style="background-color:rgba(0, 0, 0, 0.3)">
+					<h5>First slide label</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Previous</p>
 				</div>
 			</div>
-			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(../image/vieww2.jpg)">
+			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view2.jpg)">
 			</div>
-			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(../image/vieww3.jpg)">
+			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view3.jpg)">
 			</div>
-			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(../image/view2.jpg)">
+			<div class="carousel-item header-carousel-item bg-cover" style="background-image: url(image/view2.jpg)">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -204,9 +190,9 @@
 </header>
 
 <!--關於我們------------------------------------------------------------------->
-<section class="container-fluid" style="position:relative; height:500px; background-color: rgb(252, 252, 252);">
+<section class="container-fluid" style="position:relative; height:500px;">
 	<div class="row" id="Goabout">
-		<div class="col-lg-5 bg-cover" style="margin:70px; position:absolute; top:0; bottom:0; background-image:url(../image/city1.jpg);">
+		<div class="col-lg-5 bg-cover" style="position:absolute; top:0; bottom:0; background-image:url(image/city.jpg);">
 		</div>
 	</div>
 	<div class="container">
@@ -214,11 +200,9 @@
 			<div class="col-lg-7">
 				<div class="px-5 py-3 mt-5" style="height:200px; background-color: rgba(252, 252, 252,0.7); display: table; margin-left: auto; margin-right: auto;">
 					<h1 class="display-1 text-center" id="aboutUs" style="opacity:0">關於我們</h1>
-					<h4>利用「未知的旅程」提高旅人在旅途中的感知程度。</h4>
-					<h4>以永續觀光帶動此地區的觀光復甦。</h4>
-					<h4>創新的想法與不同旅行社市場中有所區隔。</h4>
-					<h4>提供了旅人不同於其他旅行社的遊程感受。</h4>
-					<h4>深度旅遊中台灣，將有趣的故事給發揚出去讓更多人知道。</h4>
+					<h4>報國事羅雄校目變最假學接中黨年片美得？</h4>
+					<h4>路時房筆係在孩續有，母學的條遊難保清福！</h4>
+					<h4>手到性是，美沒速現，裡成得經。的參片未市學。</h4>
 				</div>
 			</div>
 		</div>
@@ -226,102 +210,75 @@
 </section>
 
 <!--商品----------------------------------------------------------------------->
-<form method="get">
 <div class="container-fluid pt-5 pb-3" style="padding-left:30px; padding-right:30px" id="Goproduct">
 	<div style="text-align: cneter;">
 		<div style="text-align:center;">
-			<h1 class="display-1 text-center" id="travel" style="opacity:0">旅遊行程</h1>
-		</div>
+		<h1 class="display-1 text-center" id="travel" style="opacity:0">旅遊行程</h1>
+	</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-4 my-3">
 			<div class="card ">
 				<div class="pic" style="overflow: hidden;">
-					<a href="product.php?commidity=1"><img class="card-img-top cover" src="../image/path1.png" alt="Card image cap"></a>
+					<img class="card-img-top cover" src="image/path1.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<{if $session.1}>
-						<input type="button" id="cart_btn" class="btn btn-success" name="cart" value="查看購物車" onclick="location.href='cart.php'">
-					<{else}>
-						<input type="submit" id="cart_btn" class="btn btn-outline-success" name="cart" value="加入購物車">
-					<{/if}>
+					<button type="button" class="btn btn-outline-success btn-lg" onclick="location.href='product.html'">購買</button>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 my-3">
 			<div class="card">
 				<div class="pic" style="overflow: hidden;">
-					<a href="product.php?commidity=2"><img class="card-img-top" src="../image/path2.png" alt="Card image cap"></a>
+					<img class="card-img-top" src="image/path2.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-					<{if $session.2}>
-						<input type="button" id="cart_btn" class="btn btn-success" name="cart" value="查看購物車" onclick="location.href='cart.php'">
-					<{else}>
-						<input type="submit" id="cart_btn" class="btn btn-outline-success" name="cart1" value="加入購物車">
-					<{/if}>
+					<button type="button" class="btn btn-outline-success btn-lg">購買</button>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 my-3">
 			<div class="card">
 				<div class="pic" style="overflow: hidden;">
-					<a href="product.php?commidity=3"><img class="card-img-top" src="../image/path3.png" alt="Card image cap"></a>
+					<img class="card-img-top" src="image/path3.png" alt="Card image cap">
 				</div>
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					<{if $session.3}>
-						<input type="button" id="cart_btn" class="btn btn-success" name="cart" value="查看購物車" onclick="location.href='cart.php'">
-					<{else}>
-						<input type="submit" id="cart_btn" class="btn btn-outline-success" name="cart2" value="加入購物車">
-					<{/if}>
+					<button type="button" class="btn btn-outline-success btn-lg">購買</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-</form>
+
 <!--購買流程------------------------------------------------------------------->
 <div class="py-5" style="background-color: #b3d9d9;" id="Godetail">
 	<div class="container py-5">
 		<div class="row">
-			<div class="col-lg-4 my-3" align="center" id="product_item1" style="opacity:0">
-				<img src="../image/theme.png" class="image-fluid my-2" width="150px" height="150px">
+			<div class="col-lg-3 my-3" id="product_item1" style="opacity:0">
+				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
 				<h6>Step 1</h6>
-				<h3>選定主題</h3>
+				<h3>訂購產品</h3>
 			</div>
-			<div class="col-lg-4 my-3" align="center" id="product_item2" style="opacity:0">
-				<img src="../image/product.png" class="image-fluid my-2" width="150px" height="150px">
-				<h6>Step 2</h6>
-				<h3>購買</h3>
+			<div class="col-lg-3 my-3" id="product_item2" style="opacity:0">
+				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
+				<h6>Step 1</h6>
+				<h3>訂購產品</h3>
 			</div>
-			<div class="col-lg-4 my-3" align="center" id="product_item3" style="opacity:0">
-				<img src="../image/package.png" class="image-fluid my-2" width="150px" height="150px">
-				<h6>Step 3</h6>
-				<h3>包裹</h3>
+			<div class="col-lg-3 my-3" id="product_item3" style="opacity:0">
+				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
+				<h6>Step 1</h6>
+				<h3>訂購產品</h3>
 			</div>
-		</div>
-	</div>
-	<div class="container py-5">
-		<div class="row">
-			<div class="col-lg-4 my-3" align="center" id="product_item4" style="opacity:0">
-				<img src="../image/trip.png" class="image-fluid my-2" width="150px" height="150px">
-				<h6>Step 4</h6>
-				<h3>旅遊</h3>
-			</div>
-			<div class="col-lg-4 my-3" align="center" id="product_item5" style="opacity:0">
-				<img src="../image/checklist.png" class="image-fluid my-2" width="150px" height="150px">
-				<h6>Step 5</h6>
-				<h3>關卡</h3>
-			</div>
-			<div class="col-lg-4 my-3" align="center" id="product_item6" style="opacity:0">
-				<img src="../image/win.png" class="image-fluid my-2" width="150px" height="150px">
-				<h6>Step 6</h6>
-				<h3>出發</h3>
+			<div class="col-lg-3 my-3" id="product_item4" style="opacity:0">
+				<img src="image/buy_phone.png" class="image-fluid my-2" width="150px" height="150px">
+				<h6>Step 1</h6>
+				<h3>訂購產品</h3>
 			</div>
 		</div>
 	</div>
@@ -331,7 +288,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-7" style="text-align: center; padding-left: 10rem; margin-top: 6rem;">
-			<h2 ><img src="../image/pathfinder.png" class="img-fluid" width="120px">聯繫我們</h2>
+			<h2 ><img src="image/pathfinder.png" class="img-fluid" width="120px">聯繫我們</h2>
 		</div>
 		<div class="col-md-5" style="margin-top: 5rem; margin-bottom: 5rem;">
 			<h5 style="margin-right: 7rem;">Pathfinder股份有限公司</h5>
@@ -355,8 +312,13 @@
 		
 		<br>
 		
-		<a href="https://www.facebook.com/%E6%8E%A2%E9%9A%AA%E8%80%85-Pathfinder-332096320675311/" target="_blank" style="text-decoration:none;">
+		
+
+		<a href="https://facebook.com" target="_blank" style="text-decoration:none;">
 			<i id="fb" class="fab fa-facebook mr-3" style="font-size: 4em; color: #4f4f4f;"></i>
+		</a>
+		<a href="https://www.instagram.com/?hl=zh-tw" target="_blank" style="text-decoration:none;">
+			<i id="ig" class="fab fa-instagram ml-3" style="font-size: 4em; color: #4f4f4f;"></i>
 		</a>
 		
 		<p class="mt-5">&copy; pathfinder股份有限公司.</p>
@@ -412,9 +374,6 @@
 		var item2 = 0;
 		var item3 = 0;
 		var item4 = 0;
-		var item5 = 0;
-		var item6 = 0;
-		
 		//關於我們浮現效果
 		$(window).scroll(function(){
 			var travel = $("#travel");
@@ -482,30 +441,6 @@
 			if( bottom_of_window > bottom_of_object && item4==0 ){
 				$(product_item4).toggleClass('animated fadeInUp');
 				item4++;
-			}
-		})
-		//商品5浮現效果
-		$(window).scroll(
-		function(){
-			var product_item5 = $("#product_item5");
-			var bottom_of_object = $(product_item5).offset().top + $(product_item5).outerHeight();
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-			if( bottom_of_window > bottom_of_object && item5==0 ){
-				$(product_item5).toggleClass('animated fadeInUp');
-				item5++;
-			}
-		})
-		//商品6浮現效果
-		$(window).scroll(
-		function(){
-			var product_item6 = $("#product_item6");
-			var bottom_of_object = $(product_item6).offset().top + $(product_item6).outerHeight();
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-			if( bottom_of_window > bottom_of_object && item6==0 ){
-				$(product_item6).toggleClass('animated fadeInUp');
-				item6++;
 			}
 		})
 		//footer圖片效果
